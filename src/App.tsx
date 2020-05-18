@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
+import DisplayData from "./DisplayData";
+
+const client = new ApolloClient({
+  uri: "http://localhost:3000/graphql",
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+    <ApolloProvider client={client}>
+      <h1>React + Apollo Client</h1>
+      <p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="http://localhost:5000/graphiql"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Run GraphiQL queries here
         </a>
-      </header>
-    </div>
+      </p>
+      <DisplayData />
+    </ApolloProvider>
   );
 }
 
