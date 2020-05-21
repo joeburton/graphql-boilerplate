@@ -11,23 +11,21 @@
     "server": "node ./graphql-server/server.ts"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/express": "^4.17.6",
-    "@types/jest": "^24.9.1",
-    "@types/node": "^12.12.39",
-    "@types/react": "^16.9.35",
-    "@types/react-dom": "^16.9.8",
     "body-parser": "^1.19.0",
     "graphql-tools": "^5.0.0",
-    "http-proxy-middleware": "^1.0.3",
-    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "rimraf": "^3.0.2",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "apollo-boost": "^0.4.9",
+    "apollo-server-express": "^1.4.0",
+    "babel-cli": "^6.26.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0",
+    "react-apollo": "^3.1.5",
+    "ts-node": "^8.10.1"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,13 +43,13 @@
     ]
   },
   "devDependencies": {
-    "apollo-boost": "^0.4.9",
-    "apollo-server-express": "^1.4.0",
-    "babel-cli": "^6.26.0",
-    "express": "^4.17.1",
-    "express-graphql": "^0.9.0",
-    "graphql": "^15.0.0",
-    "react-apollo": "^3.1.5",
-    "ts-node": "^8.10.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/express": "^4.17.6",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.39",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8"
   }
 }
